@@ -25,9 +25,9 @@ public class Pedido implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private long id;
+	private Long id;
 	private Date ordered;
 	private Date shipped;
 	private float total;

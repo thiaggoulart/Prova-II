@@ -22,9 +22,9 @@ public class Address implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private long id;
+	private Long id;
 	private String street;
 	private String city;
 	private String state;

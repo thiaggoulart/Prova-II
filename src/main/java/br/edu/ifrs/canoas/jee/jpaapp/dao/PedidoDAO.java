@@ -45,7 +45,7 @@ public class PedidoDAO {
 		}
 		
 		TypedQuery<Pedido> query = em.createQuery(
-				"SELECT pedido FROM Pedido pedido  where lower(pedido.status = lower(:status)", Pedido.class);
+				"SELECT pedido FROM Pedido pedido where pedido.status = :status", Pedido.class);
 		query.setParameter("status", status);
 		List<Pedido> pedidos = query.getResultList();
 		return pedidos;

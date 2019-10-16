@@ -24,9 +24,9 @@ public class LineItem implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private long id;
+	private Long id;
 	private int quantity;
 	private float price;
 	@ManyToOne 

@@ -20,9 +20,9 @@ public class WebUser implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private long id;
+	private Long id;
 	private String password;
 	
 	@Enumerated(EnumType.STRING)

@@ -25,9 +25,9 @@ public class ShoppingCart implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
-
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
-	private long id;
+	private Long id;
 	private Date created;
 	
 	@OneToMany (mappedBy = "shoppingCart")
